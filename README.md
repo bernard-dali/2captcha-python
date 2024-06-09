@@ -43,7 +43,7 @@ The easiest way to quickly integrate the 2Captcha captcha-solving service into y
 
 This package can be installed with Pip:
 
-```pip3 install 2captcha-python```
+```pip install git+https://github.com/bernard-dali/2captcha-python.git```
 
 
 ## Configuration
