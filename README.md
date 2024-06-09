@@ -30,6 +30,7 @@ The easiest way to quickly integrate the 2Captcha captcha-solving service into y
     - [Friendly Captcha](#friendly-captcha)
     - [Cutcaptcha](#cutcaptcha)
     - [Tencent](#tencent)
+    - [Yandex](#yandex)
   - [Other methods](#other-methods)
     - [send / get_result](#send--get_result)
     - [balance](#balance)
@@ -304,6 +305,14 @@ Use this method to solve Cutcaptcha. Returns a token.
 result = solver.tencent(app_id="197326679",
                         url="https://mysite.com/page/with/tencent",
                         param1=..., ...)
+```
+
+### Yandex
+Use this method to solve Yandex Smart Captcha. Returns a token.
+```python
+result = solver.yandex(url="https://mysite.com/page/with/yandex",
+                       sitekey='FEXfAbHQsToo97VidNVk3j4dC74nGW1DgdxjtNB9',
+                       param1=..., ...)
 ```
 
 ## Other methods

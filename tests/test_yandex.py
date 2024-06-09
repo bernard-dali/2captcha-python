@@ -7,7 +7,7 @@ try:
 except ImportError:
     from abstract import AbstractTest
 
-class TurnstileTest(AbstractTest):
+class YandexTest(AbstractTest):
     
 
     def test_all_params(self):
@@ -20,13 +20,13 @@ class TurnstileTest(AbstractTest):
                 }
         
         sends = {
-                'method'  : 'jandex',
+                'method'  : 'yandex',
                 'sitekey' : '0x4AAAAAAAC3DHQFLr1GavRN',
                 'userAgent'  : 'foo',
                 'pageurl' : 'https://www.site.com/page/',
                 }
 
-        return self.send_return(sends, self.solver.jandex, **params)
+        return self.send_return(sends, self.solver.yandex, **params)
 
 
 if __name__ == '__main__':
